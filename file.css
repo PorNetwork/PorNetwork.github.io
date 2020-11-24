@@ -1,0 +1,44 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+p {
+  font-family: 'Duru Sans';
+  font-size: 15px;
+}
+
+.carousel {
+    height: 50%;
+}
+
+.item,
+.active,
+.carousel-inner {
+    height: 100%;
+}
+
+.login {
+
+        margin-bottom:5px;
+
+}
+
+
+
+.dropdown-menu {
+
+        width: 300px !important;
+
+}
+
+.footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: justified;
+  padding: 15px;
+}

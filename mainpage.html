@@ -1,0 +1,313 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<link href='https://fonts.googleapis.com/css?family=Duru Sans' rel='stylesheet'>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ABC Network</title>
+</head>
+
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">ABC Network</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li form class="navbar-form navbar-left" action="/action_page.php">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search" name="search">
+            <div class="input-group-btn">
+              <button class="btn btn-default" type="submit" style="height:34px">
+                <i class="glyphicon glyphicon-search"></i>
+              </button>
+            </div>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"></span> Logged in as ... <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#event" data-toggle="modal"><span class="glyphicon glyphicon-open"></span> Upload Event</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-dashboard"></span> Dashboard</a></li>
+            <li role="presentation" class="divider"></li>
+            <li><a href="index.html"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="https://images.wallpaperscraft.com/image/street_city_autumn_131015_1920x1080.jpg" alt="Sample 1">
+      <div class="carousel-caption">
+        <h3>Los Angeles</h3>
+        <p>LA is always so much fun!</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="https://images.wallpaperscraft.com/image/mountains_snow_summit_84607_1920x1080.jpg" alt="Sample 2">
+      <div class="carousel-caption">
+        <h3>Chicago</h3>
+        <p>Thank you, Chicago!</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="https://images.wallpaperscraft.com/image/san_francisco_usa_bridge_skyscrapers_beach_118777_1920x1080.jpg" alt="Sample 3">
+      <div class="carousel-caption">
+        <h3>New York</h3>
+        <p>We love the Big Apple!</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<div class="container text-center">    
+  <h1>Event</h1>
+  <p>Explore the section</p>
+</div><br />
+
+<div class="container text-center" style="width:100%";>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="thumbnail">
+      	<div style="width: 100%;height: 250px;background: #444;margin: 0 auto;">
+      	<img src="https://p-u.popcdn.net/events/covers/000/001/462/cover/EVENTPOP-HERO-BANNER-851-x-400-px.jpg" alt="Sample" style="max-height: 100%;max-width: 100%;width: auto;">
+        </div>
+        <div class="caption">
+        	<h2>Sample 1</h2>
+        	<p>Sample description</p>
+            <p class="text-muted"><small>Last updated 3 mins ago</small></p>
+            <p><a href="#participant" class="btn btn-primary" role="button" data-toggle="modal">Join this event</a>
+               <a href="#des1" class="btn btn-default" data-toggle="collapse">Event Details</a>
+                 <div id="des1" class="collapse text-left">
+                 <p>Location:	</p>		<br />
+                 <p>Start date:	</p>		<br />
+                 <p>Start time:	</p>		<br />
+                 <p>End date:	</p>		<br />
+                 <p>End time:	</p>
+                 </div>
+            </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+      	<div style="width: 100%;height: 250px;background: #444;margin: 0 auto;">
+      	<img src="https://images3.alphacoders.com/762/762408.png" alt="Sample" style="max-height: 100%;max-width: 100%;width: auto;">
+        </div>
+        <div class="caption">
+        	<h2>Sample 2</h2>
+        	<p>Sample description</p>
+            <p class="text-muted"><small>Last updated 3 mins ago</small></p>
+            <p><a href="#participant" class="btn btn-primary" role="button" data-toggle="modal">Join this event</a>
+               <a href="#des2" class="btn btn-default" data-toggle="collapse">Event Details</a>
+                 <div id="des2" class="collapse text-left">
+                 <p>Location:	</p>		<br />
+                 <p>Start date:	</p>		<br />
+                 <p>Start time:	</p>		<br />
+                 <p>End date:	</p>		<br />
+                 <p>End time:	</p>
+                 </div>
+            </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+      	<div style="width: 100%;height: 250px;background: #444;margin: 0 auto;">
+      	<img src="https://www.mtlblog.com/u/2018/06/19/0a5fbca8753ebe1391004d91c97dba2462b3b76a.png_1200x630.png" alt="Sample" style="max-height: 100%;max-width: 100%;width: auto;">
+        </div>
+        <div class="caption">
+        	<h2>Sample 3</h2>
+        	<p>Sample description</p>
+            <p class="text-muted"><small>Last updated 3 mins ago</small></p>
+            <p><a href="#participant" class="btn btn-primary" role="button" data-toggle="modal">Join this event</a>
+               <a href="#des3" class="btn btn-default" data-toggle="collapse">Event Details</a>
+                 <div id="des3" class="collapse text-left">
+                 <p>Location:	</p>		<br />
+                 <p>Start date:	</p>		<br />
+                 <p>Start time:	</p>		<br />
+                 <p>End date:	</p>		<br />
+                 <p>End time:	</p>
+                 </div>
+            </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><br /><br />
+
+  <!-- Modal -->
+  <div class="modal fade" id="participant" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Event Subscription</h4>
+        </div>
+        <div class="modal-body">
+  			<form class="form-horizontal" action="/action_page.php">
+    			<div class="form-group">
+      				<label class="control-label col-sm-2" for="Name">Name: </label>
+      				<div class="col-sm-5">
+        				<input type="text" class="form-control" id="text" placeholder="First Name">
+      				</div>
+      				<div class="col-sm-5">
+        				<input type="text" class="form-control" id="text" placeholder="Last Name">
+      				</div>
+    			</div>
+    			<div class="form-group">
+      				<label class="control-label col-sm-2" for="Email">Email: </label>
+      				<div class="col-sm-4">
+        				<input type="email" class="form-control" id="email" placeholder="Email">
+      				</div>
+      				<label class="control-label col-sm-2" for="Phone">Phone: </label>
+      				<div class="col-sm-4">
+        				<input type="tel" class="form-control" id="text" placeholder="Phone Number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+      				</div>
+    			</div>
+  			</form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Submit</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="event" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Upload Event</h4>
+        </div>
+        <div class="modal-body">
+            <form class="form-horizontal" action="/action_page.php">
+    			<div class="form-group">
+      				<label class="control-label col-sm-2" for="Title">Event Title: </label>
+      				<div class="col-sm-10">
+        				<input type="text" class="form-control" id="text" placeholder="Event Title">
+      				</div>
+    			</div>
+    			<div class="form-group">
+      				<label class="control-label col-sm-2" for="Description">Description: </label>
+      				<div class="col-sm-10">
+        				<textarea class="form-control" row="5" id="description" placeholder="Event Description"></textarea>
+      				</div>
+    			</div>
+    			<div class="form-group">
+      				<label class="control-label col-sm-2" for="Location">Location: </label>
+      				<div class="col-sm-10">
+        				<input type="text" class="form-control" id="text" placeholder="Location">
+      				</div>
+    			</div>
+                <div class="form-group">
+                	<label class="control-label col-sm-2" for="Image">Image: </label>
+                    <div class="col-sm-10">
+                    	<input type="file" name="pic" accept="image/*">
+                    </div>
+                </div>
+    			<div class="form-group">
+      				<label class="control-label col-sm-2" for="StartDate">Start Date: </label>
+      				<div class="col-sm-4">
+        				<input type="date" class="form-control" id="text" placeholder="">
+      				</div>
+      				<label class="control-label col-sm-2" for="StartTime">Start Time: </label>
+      				<div class="col-sm-4">
+        				<input type="time" class="form-control" id="text" placeholder="">
+      				</div>
+    			</div>
+    			<div class="form-group">
+      				<label class="control-label col-sm-2" for="EndDate">End Date: </label>
+      				<div class="col-sm-4">
+        				<input type="date" class="form-control" id="text" placeholder="">
+      				</div>
+      				<label class="control-label col-sm-2" for="EndTime">End Time: </label>
+      				<div class="col-sm-4">
+        				<input type="time" class="form-control" id="text" placeholder="">
+      				</div>
+    			</div>
+  			</form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Submit</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+<div class="footer">
+	<div class="row">
+    	<div class="col-md-4"></div>
+        <div class="col-md-4"></div>
+        <div class="col-md-4"><h4><b>About us<b></h4></div>
+	</div>
+    <div class="row">
+    	<div class="col-md-4"></div>
+        <div class="col-md-4"></div>
+        <div class="col-md-4"><h6>ABC Network event provider application</h6></div>
+	</div>
+    <div class="row">
+    	<div class="col-md-4"></div>
+        <div class="col-md-4"></div>
+        <div class="col-md-4"><h6>Sponsored by IT3351 Web Application Development</h6></div>
+	</div>
+    <div class="row">
+    	<div class="col-md-4"></div>
+        <div class="col-md-4"></div>
+        <div class="col-md-4"><h6>Tel: 012-345-6789, Assumption University, Bangkok, Thailand</h6></div>
+	</div>
+</div>
+
+</body>
+</html>
